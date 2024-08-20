@@ -1,6 +1,11 @@
 import moment from "moment";
+import { type Metadata } from "next";
 import Link from "next/link";
 import { posts } from "~/velite";
+
+export const metadata: Metadata = {
+  title: "Blog",
+};
 
 const BlogsPage = () => {
   return (

@@ -4,9 +4,14 @@ import { faGolang } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { ImageGrid } from "./components/home/images";
+import type { Metadata } from "next";
 
 const LINK_CLASS =
   "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-neutral-50 underline decoration-transparent underline-offset-2 transition transition-colors hover:cursor-pointer hover:decoration-neutral-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
+
+export const metadata: Metadata = {
+  title: "Tatu Cosmin",
+};
 
 export default function Home() {
   return (

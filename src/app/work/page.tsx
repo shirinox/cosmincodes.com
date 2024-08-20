@@ -1,4 +1,9 @@
 import FadeInContainer from "@/app/components/framer";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Work",
+};
 
 const WorkPage = () => {
   return (
