@@ -24,7 +24,7 @@ const WorkPage = () => {
         <li>
           Overcoming various challenges upon debugging different applications
           written in AppScript along with their according Google Cloud Platform
-          projects
+          projects.
         </li>
       </ul>
     </FadeInContainer>

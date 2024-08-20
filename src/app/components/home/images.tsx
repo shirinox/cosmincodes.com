@@ -36,7 +36,7 @@ const IMAGE_WIDTH = 9 * IMAGE_QUALITY;
 
 export const images: TravelImage[] = [
   {
-    url: "/home/rainbow_buildings.jpg",
+    url: "https://img.cosmincodes.com/rainbow_buildings.jpg",
     alt: "Rainbow buildings with trees in Berlin, Germany",
     width: IMAGE_HEIGHT,
     height: IMAGE_WIDTH,
@@ -45,7 +45,7 @@ export const images: TravelImage[] = [
     city: "Berlin",
   },
   {
-    url: "/home/birmingham_food.jpg",
+    url: "https://img.cosmincodes.com/birmingham_food.JPG",
     alt: "Chicken and fries, along with charred jalapenos in Birmingham, UK",
     width: IMAGE_HEIGHT,
     height: IMAGE_WIDTH,
@@ -53,7 +53,7 @@ export const images: TravelImage[] = [
     city: "Birmingham",
   },
   {
-    url: "/home/sunset_berlin.jpg",
+    url: "https://img.cosmincodes.com/sunset_berlin.JPG",
     alt: "Beautiful sunset in Berlin, Germany",
     width: IMAGE_HEIGHT,
     height: IMAGE_WIDTH,
@@ -61,7 +61,7 @@ export const images: TravelImage[] = [
     city: "Berlin",
   },
   {
-    url: "/home/church_budapest.jpg",
+    url: "https://img.cosmincodes.com/church_budapest.JPG",
     alt: "Church with statue in Budapest, Hungary",
     width: IMAGE_HEIGHT,
     height: IMAGE_WIDTH,
@@ -70,7 +70,7 @@ export const images: TravelImage[] = [
     className: "col-span-2",
   },
   {
-    url: "/home/carturesti_timisoara.jpg",
+    url: "https://img.cosmincodes.com/carturesti_timisoara.JPG",
     alt: "Book store in Timisoara, Bucharest",
     width: IMAGE_HEIGHT,
     height: IMAGE_WIDTH,
@@ -79,7 +79,7 @@ export const images: TravelImage[] = [
     className: "lg:col-span-2",
   },
   {
-    url: "/home/building_berlin.jpg",
+    url: "https://img.cosmincodes.com/building_berlin.JPG",
     alt: "Aethetic building in Berlin, Germany",
     width: IMAGE_HEIGHT,
     height: IMAGE_WIDTH,

@@ -27,7 +27,7 @@ export default function Home() {
         <Link className={LINK_CLASS} href="https://concentrix.com">
           System Software Engineer @ Concentrix
         </Link>{" "}
-        and{" "}
+        while{" "}
         <Button
           className="inline-flex items-center gap-1 border border-cyan-300 bg-cyan-900 text-neutral-50 hover:border-cyan-100"
           variant={"backgroundicon"}
@@ -39,7 +39,7 @@ export default function Home() {
             icon={faGolang}
           />
         </Button>{" "}
-        in my free time. Here&apos;s some key moments from my travels:
+        in my free time. Also, here are some key moments from my travels:
       </p>
       <ImageGrid />
       <p className="font-light text-neutral-300">

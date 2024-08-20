@@ -5,6 +5,16 @@ module.exports = {
     config.plugins.push(new VeliteWebpackPlugin());
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.cosmincodes.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 class VeliteWebpackPlugin {
