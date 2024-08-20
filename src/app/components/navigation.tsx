@@ -23,7 +23,7 @@ const links = [
 const Navigation = () => {
   const pn = usePathname();
   return (
-    <FadeInContainer className="pb-12">
+    <FadeInContainer className="flex justify-between pb-12">
       <ul className="flex space-x-4">
         {links.map((link) => (
           <Link key={link.name} href={link.href}>
@@ -38,6 +38,12 @@ const Navigation = () => {
           </Link>
         ))}
       </ul>
+      <Link
+        className="font-normal tracking-tighter text-neutral-400 transition duration-300"
+        href={"mailto:work@cosmincodes.com"}
+      >
+        contact me
+      </Link>
     </FadeInContainer>
   );
 };
