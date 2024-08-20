@@ -1,27 +1,58 @@
 import Link from "next/link";
-import LinkIcon from "./components/link-icon";
-import { faCoffee, faB } from "@fortawesome/free-solid-svg-icons";
-import { faUpwork } from "@fortawesome/free-brands-svg-icons";
+import { Button } from "./components/button";
+import { faGolang } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { ImageGrid } from "./components/home/images";
+
+const LINK_CLASS =
+  "ring-offset-background focus-visible:ring-ring inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium text-neutral-50 underline decoration-transparent underline-offset-2 transition transition-colors hover:cursor-pointer hover:decoration-neutral-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50";
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-neutral-50 font-semibold text-2xl mb-12">
-        hi, I&apos;m cosmin 👋
-      </h1>
-      <p className="font-normal text-base">
-        I&apos;m a fullstack developer, perfectionist, and travel enthusiast. I
-        use <LinkIcon href="https://upwork.com">Nextjs</LinkIcon> for most of my
-        projects. I currently{" "}
-        <LinkIcon
-          icon={<FontAwesomeIcon icon={faUpwork} />}
-          href="https://upwork.com"
+    <main className="space-y-8">
+      <div>
+        <h1 className="text-2xl tracking-tight text-neutral-50">
+          hey there, this is cosmin 👋🏻
+        </h1>
+      </div>
+
+      <p className="font-light text-neutral-300">
+        I&apos;m a software engineer, perfectionist, and travel enthusiast. I
+        currently{" "}
+        <Link className={LINK_CLASS} href={"/work"}>
+          work
+        </Link>{" "}
+        as a{" "}
+        <Link className={LINK_CLASS} href="https://concentrix.com">
+          System Software Engineer @ Concentrix
+        </Link>{" "}
+        and{" "}
+        <Button
+          className="inline-flex items-center gap-1 border border-cyan-300 bg-cyan-900 text-neutral-50 hover:border-cyan-100"
+          variant={"backgroundicon"}
+          size={"backgroundicon"}
         >
-          freelance
-        </LinkIcon>{" "}
-        most of my work, always trying to improve and be the best version of
-        myself.
+          learning
+          <FontAwesomeIcon
+            className="h-5 w-5 shrink-0 text-white"
+            icon={faGolang}
+          />
+        </Button>{" "}
+        in my free time. Here&apos;s some key moments from my travels:
+      </p>
+      <ImageGrid />
+      <p className="font-light text-neutral-300">
+        I really enjoy{" "}
+        <Link
+          className={LINK_CLASS}
+          href="https://www.tiktok.com/@codewithcosmin"
+        >
+          making development content
+        </Link>
+        , localized to my country as I consider sharing your knowledge back to
+        others is important. I mostly specialize in building Next.js
+        applications as this is what I&apos;ve been using in the past 2 years.
       </p>
     </main>
   );

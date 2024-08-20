@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import FadeInContainer from "./framer";
 
 const links = [
   {
@@ -22,14 +23,14 @@ const links = [
 const Navigation = () => {
   const pn = usePathname();
   return (
-    <nav className="mt-12 mb-14">
+    <FadeInContainer className="pb-12">
       <ul className="flex space-x-4">
         {links.map((link) => (
           <Link key={link.name} href={link.href}>
             <li
               className={cn(
-                "font-normal transition tracking-tighter duration-300 text-neutral-400",
-                pn === link.href && "text-neutral-200"
+                "font-normal tracking-tighter text-neutral-400 transition duration-300",
+                pn === link.href && "text-neutral-200",
               )}
             >
               {link.name}
@@ -37,7 +38,7 @@ const Navigation = () => {
           </Link>
         ))}
       </ul>
-    </nav>
+    </FadeInContainer>
   );
 };
 

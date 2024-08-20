@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "@/styles/globals.css";
 import Navigation from "./components/navigation";
 import { cn } from "@/lib/utils";
+import { CommandMenu } from "./components/commandmenu";
+import FadeInContainer from "./components/framer";
 
-const inter = Inter({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(`${inter.className} w-full h-screen`)}>
-        <div className="max-w-2xl px-6 flex flex-col mx-auto">
+      <body className={cn(`${outfit.className} h-screen w-full`)}>
+        <CommandMenu />
+        <div className="mx-auto flex max-w-screen-sm flex-col px-6 py-12">
           <Navigation />
-          {children}
+          <FadeInContainer>{children}</FadeInContainer>
         </div>
       </body>
     </html>
